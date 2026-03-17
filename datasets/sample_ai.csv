@@ -1,0 +1,10 @@
+task,worker,label
+question1,GPT4,dog
+question1,Gemini,dog
+question1,Mistral,cat
+question2,GPT4,dog
+question2,Gemini,hamster
+question2,Mistral,hamster
+question3,GPT4,parrot
+question3,Gemini,parrot
+question3,Mistral,cat

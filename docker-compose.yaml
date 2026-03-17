@@ -1,0 +1,11 @@
+
+services:
+  cmdstanpy:
+    build:
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/toolkit_root
+    container_name: crowd4u-aggregation-toolkit
+    ports:
+      - "8008:8888"
+    command: jupyter lab --ip=0.0.0.0 --no-browser --allow-root 

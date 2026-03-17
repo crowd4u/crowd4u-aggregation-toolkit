@@ -1,0 +1,10 @@
+task,worker,label
+question1,worker1,dog
+question1,worker2,cat
+question1,worker3,dog
+question2,worker1,dog
+question2,worker2,hamster
+question2,worker3,hamster
+question3,worker1,parrot
+question3,worker2,parrot
+question3,worker3,cat
