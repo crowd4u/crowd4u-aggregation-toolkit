@@ -28,4 +28,12 @@
 
 ※Apple SiliconなどのARMアーキテクチャのコンピュータでは動作確認をしておりません。`x64`アーキテクチャでの実行を推奨します。
 
-### 2. 
+### 2. ツールキットをダウンロードする
+#### `git`コマンドが利用可能な場合
+このリポジトリをクローンしてください。
+#### `git`コマンドが利用できない・わからない場合
+<img width="500" height="252" alt="image" src="https://github.com/user-attachments/assets/9a103df4-5e7d-49f2-9d3b-e4acab1b7d44" />
+
+1. https://github.com/crowd4u/crowd4u-aggregation-toolkit/ にアクセスします。
+2. ページ右上の緑色「Code」ボタン（写真赤丸部分）を押して、「Download ZIP」を押します。
+3. ダウンロードしたZIPファイルを展開し、任意の場所に保存してください。
