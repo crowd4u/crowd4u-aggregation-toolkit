@@ -73,7 +73,7 @@ Additionally, you must save the list of possible label values in a separate JSON
 ]
 ```
 
-**These files must be saved under the datasets/ directory of this toolkit.** Sample data is provided in datasets/ for your reference.
+**These files must be saved under the `datasets/` directory of this toolkit.** Sample data is provided in `datasets/` for your reference.
 
 **Note: This toolkit provides a notebook to assist in converting Crowd4U TAR table data into the toolkit's format. Please refer to the notebook below if you need to convert from TAR format. Alternatively, data conversion can be easily performed using Generative AI tools.**
 
@@ -98,7 +98,7 @@ docker exec crowd4u-aggregation-toolkit python main.py <Method_Name> <Output_Fil
     - `BDS`: Bayesian Dawid-Skene method using Markov Chain Monte Carlo (MCMC) [(Paun et al. 2018)](https://aclanthology.org/Q18-1040/). The first run will take some time.
     - `HSDS_EM`: Human-Seeded Dawid-Skene (HS-DS) method (our paper; under review) implemented via the EM algorithm, designed to address the issue of unbalanced AI performance. This cannot be applied to human-only data. It may fail on very small datasets (like the sample data).
     - `HSDS_MCMC`: HS-DS method implemented via MCMC. This cannot be applied to human-only data. The first run will take some time.
-- `<Output_Filename>`: Specify the filename for the aggregated results. Results are saved in the results/ folder.
+- `<Output_Filename>`: Specify the filename for the aggregated results. Results are saved in the `results/` folder.
 - `<Labels_JSON_Filename>`: The JSON file created in step 3.
 - `<Human_Data_CSV_Filename>`: The human worker CSV file created in step 3.
 - `<AI_Data_CSV_Filename (Optional)>`: The AI worker CSV file created in step 3. Not required if no AI data exists. For methods that do not distinguish between humans and AI (any method other than HS-DS), this data will be vertically concatenated with the human data for processing.
@@ -114,7 +114,7 @@ docker exec crowd4u-aggregation-toolkit python main.py DS sample_result.csv samp
 docker exec crowd4u-aggregation-toolkit python main.py HSDS_MCMC sample_result.csv sample_labels.json sample_human.csv sample_ai.csv
 ```
 
-5. The results will be saved in results/ under the specified filename.
+5. The results will be saved in `results/` under the specified filename.
 6. To stop the container, run the following command:
 ```sh
 docker compose stop
