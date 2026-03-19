@@ -74,7 +74,7 @@ question3,worker3,cat
 
 **なお、このツールキットはCrowd4UのTARテーブルデータからツールキット用の形式に変換する操作を支援するノートブックを提供しています。TAR形式から変換する場合は、以下のノートブックもご覧ください。また、このようなデータ変換は生成AI等でも容易に行えます。**
 
-- wip
+- [transform_tar_table.ipynb](https://github.com/crowd4u/crowd4u-aggregation-toolkit/blob/main/transform_tar_table.ipynb)
 
 ### 4. 集約を実行する
 1. `docker`コマンドが利用可能なターミナルを起動します。
