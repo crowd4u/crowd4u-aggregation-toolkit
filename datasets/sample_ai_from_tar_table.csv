@@ -1,0 +1,10 @@
+task,worker,label
+question_1,GPT-4,jellyfish
+question_2,GPT-4,squid
+question_3,GPT-4,octopus
+question_1,Claude,jellyfish
+question_2,Claude,squid
+question_3,Claude,squid
+question_1,original_model,squid
+question_2,original_model,jellyfish
+question_3,original_model,octopus

@@ -1,0 +1,10 @@
+task,worker,label
+question_1,human1,jellyfish
+question_1,human2,squid
+question_1,human3,jellyfish
+question_2,human1,squid
+question_2,human2,jellyfish
+question_2,human3,squid
+question_3,human1,octopus
+question_3,human2,jellyfish
+question_3,human3,octopus
