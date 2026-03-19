@@ -44,9 +44,9 @@ class HSDS_Stan():
         self.K = len(self.label2int.keys()) 
         ## Create model
         model_path = os.path.dirname(__file__) + "/HSDS_stan/step1.stan"
-        self.step1_model = cmdstanpy.CmdStanModel(stan_file=model_path,  cpp_options={ 'STAN_THREADS' : True })
+        self.step1_model = cmdstanpy.CmdStanModel(stan_file=model_path)
         model_path = os.path.dirname(__file__) + "/HSDS_stan/step2.stan"
-        self.step2_model = cmdstanpy.CmdStanModel(stan_file=model_path,  cpp_options={ 'STAN_THREADS' : True })
+        self.step2_model = cmdstanpy.CmdStanModel(stan_file=model_path)
         self.step1_done = False
         self.step2_done = False 
 
@@ -115,7 +115,7 @@ class HSDS_Stan():
         }
         ## Fitting
         if self.algorithm == "mcmc":
-            self.step1_fit = self.step1_model.sample(data=step1_data, output_dir="./outputs/", threads_per_chain = 24, **self.infer_params)
+            self.step1_fit = self.step1_model.sample(data=step1_data, output_dir="./outputs/", **self.infer_params)
             if check_rhat:
                 self.convergence_step1 = self.__check_rhat(self.step1_fit, step2=False)
                 if not self.convergence_step1:
@@ -192,7 +192,7 @@ class HSDS_Stan():
         # ============
         ## Fitting
         if self.algorithm == "mcmc":
-            self.step2_fit = self.step2_model.sample(data=step2_data, inits=init_data, output_dir="./outputs/", threads_per_chain = 24, **self.infer_params)
+            self.step2_fit = self.step2_model.sample(data=step2_data, inits=init_data, output_dir="./outputs/", **self.infer_params)
             if check_rhat:
                 self.convergence_step2 = self.__check_rhat(self.step2_fit, step2=True)
                 self.convergence = self.convergence_step2
