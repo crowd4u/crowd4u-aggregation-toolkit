@@ -77,7 +77,7 @@ Additionally, you must save the list of possible label values in a separate JSON
 
 **Note: This toolkit provides a notebook to assist in converting Crowd4U TAR table data into the toolkit's format. Please refer to the notebook below if you need to convert from TAR format. Alternatively, data conversion can be easily performed using Generative AI tools.**
 
-- wip
+- [transform_tar_table.ipynb](https://github.com/crowd4u/crowd4u-aggregation-toolkit/blob/main/transform_tar_table.ipynb)
 
 ### 4. Run the Aggregation
 1. Open a terminal where the docker command is available.
